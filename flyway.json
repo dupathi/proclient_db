@@ -1,0 +1,24 @@
+{
+  "databaseType": "MySql",
+  "name": "micro",
+  "id": "c1cf3199-25bb-4510-9c88-75924978d91c",
+  "flywayDesktop": {
+    "developmentEnvironment": "development",
+    "shadowEnvironment": "shadow",
+    "schemaModel": "./schema-model"
+  },
+  "redgateCompare": {
+    "filterFile": "filter.rgf"
+  },
+  "flyway": {
+    "mixed": true,
+    "outOfOrder": true,
+    "locations": [
+      "filesystem:migrations"
+    ],
+    "validateMigrationNaming": true
+  },
+  "schemas": [
+    "micro_db"
+  ]
+}
